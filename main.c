@@ -80,12 +80,12 @@ void modifiertache(){
      }
      }
      void filtreraddparpriorite(){
-    char priorite[20];
+    char prior[20];
     printf("Entrez la priorité pour filtrer (high, low): ");
-    scanf("%s", priorite);  
+    scanf("%s", prior);  
 
     for(int i = 0; i < nombreadd; i++) {
-        if(strcmp(add[i].priorte, priorite) == 0){
+        if(strcmp(add[i].priorte, prior) == 0){
             printf("Tâche %d:\n", i + 1);
             affichertache(add[i]);
         }
